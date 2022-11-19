@@ -11,21 +11,21 @@
 
 <body>
 
-    <div style="color:white;" class="container">
+    <div style="color:black;" class="container">
         <form action="{{ url_for('predict')}}" method="post">
             <h2 class='container-heading'><span class="heading_font">Chronic Kidney Disease Prediction</span></h2>
 
         <br><br><br><br>
 
         <!-- Result -->
-		<div style="color:white;" class="results">
+		<div style="color:black;" class="results">
 			{% if prediction==1 %}
 				<h1><span class='danger'>Oops!<br><br>You have CHRONIC KIDNEY DISEASE.<br><br>Please Consult Doctor.</span></h1>
                 <br><br><br><br><br><br>
 				
 			{% elif prediction==0 %}
-				<h1><span class='safe'>OOPS  !<br><br>You have Chronic Kidney Disease.<br>
-                    PLEASE CONSULT DOCTOR.
+				<h1><span class='safe'>GREAT !<br><br>You don't have Chronic Kidney Disease.<br>
+             
                                           </span></h1>
 				
 				
